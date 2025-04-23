@@ -5,6 +5,7 @@ dotenv.config();
 const io = new Server({
   cors: {
     origin: process.env.CORS_ORIGIN,  // Using the CORS_ORIGIN variable from the .env file
+    credentials: true  
   },
 });
 
